@@ -5,6 +5,8 @@ import org.example.model.Account;
 import org.example.model.Tweet;
 import org.example.repository.TweetRepository;
 
+import java.util.List;
+
 public class TweetService {
 
     public void createTweet(Account account, String content) {
@@ -13,7 +15,7 @@ public class TweetService {
         System.out.println("tweet created successfully");
     }
 
-    public static String showMyTweet(Account, String content) {
-
+    public static List<Tweet> showAllTweet() {
+        return TweetRepository.showAllTweet();
     }
 }

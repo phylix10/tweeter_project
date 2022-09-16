@@ -6,7 +6,7 @@ import org.example.repository.AccountRepository;
 
 public class AccountService {
     private Account loggedInUser = null;
-    private TweetService tweetService;
+    private TweetService tweetService = new TweetService();
 
     public void creatTweet(String content){
         tweetService.createTweet(loggedInUser,content);

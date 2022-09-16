@@ -45,7 +45,7 @@ public class AccountRepository {
                 return new Account(id,username,password);
             }
 
-
+            resultSet.close();
             preparedStatement.close();
             connection.close();
 

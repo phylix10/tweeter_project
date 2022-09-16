@@ -7,6 +7,9 @@ public class Tweet {
     private int tweetLikeCount;
     private int commentCount;
 
+    public Tweet() {
+    }
+
     public Tweet(Account tweetUser, String tweetContent) {
         this.tweetUser = tweetUser;
         this.tweetContent = tweetContent;
